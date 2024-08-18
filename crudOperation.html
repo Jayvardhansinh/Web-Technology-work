@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="disp">
+    <button onclick="add()">Add</button>
+    <button onclick="edit()">Edit</button>
+    <button onclick="remove()">Delete</button>
+    <script>
+        const arr = []
+        function add(){
+            const x = document.getElementById("disp");
+            arr.push(x.value);
+            x.values=" ";
+            display();
+        }o
+        function edit(){
+            document.getElementById("disp");
+            arr.splice(index, 1);
+            display();       
+        }
+        function remove(){
+            const y = document.getElementById("disp");
+            arr.pop(y.values);
+            display();
+        }
+        function display(){
+            console.log(arr);
+        }
+    </script>
+</body>
+</html>

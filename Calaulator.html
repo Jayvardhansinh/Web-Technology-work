@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        input{
+           background-color: black;
+           color: goldenrod; 
+           border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="text" id="disp">
+        </div>
+        <div style="padding: 5px;">
+            <input type="button" onclick="disp('7')" value="7">
+            <input type="button" onclick="disp('8')" value="8">
+            <input type="button" onclick="disp('9')" value="9">
+            <input type="button" onclick="disp('/')" value="/">
+        </div>
+        <div style="padding: 5px;">
+            <input type="button" onclick="disp('4')" value="4">
+            <input type="button" onclick="disp('5')" value="5">
+            <input type="button" onclick="disp('6')" value="6">
+            <input type="button" onclick="disp('*')" value="*">
+        </div>
+        <div style="padding: 5px;">
+            <input type="button" onclick="disp('1')" value="1">
+            <input type="button" onclick="disp('2')" value="2">
+            <input type="button" onclick="disp('3')" value="3">
+            <input type="button" onclick="disp('-')" value="-">
+        </div>
+        <div style="padding: 5px;">
+            <input type="button" onclick="disp('0')" value="0">
+            <input type="button" onclick="disp('.')" style="width: 19px;" value=".">
+            <input type="button" onclick="disp('+')" value="+">
+            <input type="button" onclick="disp('=')" value="=">
+        </div>
+        <div style="padding: 5px;">
+            <input type="button" onclick="disp('Del')" value="Del">
+            <input type="button" onclick="disp('AC')" value="AC">
+            <input type="button" onclick="disp('%')" value="%">
+        </div>
+    </div>
+
+    <script>
+        function disp(char){
+            document.getElementById("disp").value += char
+         }
+         function clearDisp(){
+            document.getElementById("disp").value += "";
+         }
+         
+    </script>
+</body>
+</html>
